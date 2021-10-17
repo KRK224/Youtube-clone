@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/893b391123.js" crossorigin="anonymous">
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <script type="module" src="mainjs.js"></script>
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+
+  <title>Youtube Clone</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav_bar">
+      <div class="logo">
+        <button>
+          <i class="fas fa-bars"></i>
+        </button>
+        <a href='https://www.youtube.com/'>
+          <img class="youtube-logo" src="Logo/YouTube-Logo.png" alt="YouTube-Logo">
+        </a>
+      </div>
+
+      <div class="searchBar">
+        <form action="#">
+          <div class="searchWrapper">
+            <div class="textSearch">
+              <input type="text" placeholder="검색" id="search">
+              <a class="searchBarSearch dropdown">
+                <i class="fas fa-search"></i>
+                <div class="dropdown-content">
+                  Search
+                </div>
+              </a>
+            </div>
+            <div class="voiceSearch">
+              <a class="searchBarMic dropdown">
+                <i class="fas fa-microphone"></i>
+                <div class="dropdown-content">
+                  Search with your voice
+                </div>
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="nav_icons">
+        <a href="#" class="dropdown">
+          <i class="fas fa-search"></i>
+          <div class="dropdown-content">
+            Search
+          </div>
+        </a>
+        <a href="#" class="dropdown">
+          <i class="fas fa-microphone"></i>
+          <div class="dropdown-content">
+            Search with your voice
+          </div>
+        </a>
+        <a href="#" class="dropdown">
+          <i class="fas fa-video"></i>
+          <div class="dropdown-content">
+            Create
+          </div>
+        </a>
+        <a href="#" class="dropdown">
+          <i class="fas fa-th"></i>
+          <div class="dropdown-content">
+            YouTubes apps
+          </div>
+        </a>
+        <a href="#" class="dropdown">
+          <i class="fas fa-bell"></i>
+          <div class="dropdown-content">
+            Notifications
+          </div>
+        </a>
+        <a href="#"><img src="Logo/C-removebg-preview.png" class="UserAccount"></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="main_section">
+      <!-- 영상 재생 article -->
+      <article class="movie">
+        <div class="iframebox">
+          <iframe width='100%' height="auto" src="https://www.youtube.com/embed/QXs9I0j1uuo"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </article>
+
+      <!-- 동영상 정보 article -->
+      <article class="info">
+
+        <div class="hashtag">
+          <ul>
+            <li><a href="https://www.youtube.com/hashtag/%ED%95%B4%EB%A6%AC%EC%95%88">#해리안</a></li>
+            <li><a href="https://www.youtube.com/hashtag/%EC%9C%A4%EC%86%8C%EC%95%88">#윤소안</a></li>
+            <li><a
+                href="https://www.youtube.com/hashtag/%ED%94%8C%EB%A0%88%EC%9D%B4%EB%A6%AC%EC%8A%A4%ED%8A%B8">#플레이리스트</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="title">해리안 윤소안 플레이리스트 | Harryan Yoonsoan Playlist (2 hours)</div>
+
+        <div class="views_icons">
+          <span class="views">171K views · Apr 1, 2021</span>
+          <span class="response_icons">
+            <span class="thumbsIcons">
+              <button class="dropdown liked">
+                <span>
+                  <i class="fas fa-thumbs-up"></i> 3.9K
+                </span>
+                <div class="dropdown-content">
+                  I like this
+                </div>
+              </button>
+              <button class="dropdown disliked">
+                <span>
+                  <i class="fas fa-thumbs-down"></i> 28
+                </span>
+                <div class="dropdown-content">
+                  I dislike this
+                </div>
+              </button>
+            </span>
+
+            <button class="dropdown">
+              <span>
+                <i class="fas fa-share"></i> SHARE
+              </span>
+              <div class="dropdown-content">
+                Share
+              </div>
+            </button>
+            <button class="dropdown">
+              <span>
+                <i class="fab fa-stack-overflow"></i> Save
+              </span>
+              <div class="dropdown-content">
+                Save
+              </div>
+            </button>
+            <button class="dropdown"><i class="fas fa-ellipsis-h"></i></button>
+          </span>
+        </div>
+
+
+        <div class="subscribe_info">
+          <div class="channel_info">
+            <a href="https://www.youtube.com/channel/UC3vFmScx0lZMPhOk0dI8Qlg" class="video_owner">
+              <img src="Logo/video_owner.jpg" alt="video_owner">
+              <span>YOONSOAN 윤소안</span>
+            </a>
+            <span class="subscribe_icon">
+              <button class="text">SUBSCRIBED</button>
+              <button class="icon"><i class="far fa-bell"></i></button>
+            </span>
+          </div>
+          <div class="info_showMore">
+            <p class="visible_info">
+              많이 기다리셨지용 <br>
+              <br>
+              <a href="#">0:00</a> 해리안 윤소안 좀 늦으면 어때<br>
+              <button>SHOW MORE</button>
+            </p>
+            <!-- <div class="hidden_info"></div> -->
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <aside>
+      <div class="next_playlist">
+        <div class="swiper-container mySwiper swiper">
+          <div class="swiper-wrapper btn_icons">
+            <div class="swiper-slide"><button>All</button></div>
+            <div class="swiper-slide"><button>From your search</button></div>
+            <div class="swiper-slide"><button>Playlists</button></div>
+            <div class="swiper-slide"><button>Related</button></div>
+            <div class="swiper-slide"><button>Recently uploaded</button></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+      <!-- 다음 재생 목록
+      <section class="next_playlist">
+        <div class="btn_icons">
+          <button>All</button>
+          <button>From your search</button>
+          <button>Playlists</button>
+          <button>Related</button>
+          <button>Recently uploaded</button>
+        </div> -->
+
+        <div class="next_video">
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/watch?v=oSnVp6zLi2M">
+                <div class="thumbnail_icons">
+                  <img src="https://img.youtube.com/vi/oSnVp6zLi2M/mqdefault.jpg" alt="thumbnail" class="thumbnail">
+                  <button class="watchIcon"><i class="far fa-clock"></i></button>
+                  <button class="listsIcon"><i class="fas fa-stream"></i></button>
+                </div>
+                <div class="nextInfo">
+                  <span class="nextTitle">
+                    해리안 Harryan Non stop Playlist
+                  </span>
+                  <span class="next_metadata">
+                    Voice Lyrics <br>
+                    235K views · 1 year ago
+                  </span>
+                </div>
+                <button class="nextMoreBtn"><i class="fas fa-ellipsis-v"></i></button>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com/watch?v=DTYvG_9mVlQ">
+                <div class="thumbnail_icons">
+                  <img src="https://img.youtube.com/vi/DTYvG_9mVlQ/mqdefault.jpg" alt="thumbnail" class="thumbnail">
+                  <button class="watchIcon"><i class="far fa-clock"></i></button>
+                  <button class="listsIcon"><i class="fas fa-stream"></i></button>
+                </div>
+                <div class="nextInfo">
+                  <span class="nextTitle">
+                    ONEPICK | 아이유 IU, 취향의 발견 플레이리스트
+                  </span>
+                  <span class="next_metadata">
+                    취향의 발견 <br>
+                    1.1M views · 4 months ago
+                  </span>
+                </div>
+                <button class="nextMoreBtn"><i class="fas fa-ellipsis-v"></i></button>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com/watch?v=5ePKBm4spBg">
+                <div class="thumbnail_icons">
+                  <img src="https://img.youtube.com/vi/5ePKBm4spBg/mqdefault.jpg" alt="thumbnail" class="thumbnail">
+                  <button class="watchIcon"><i class="far fa-clock"></i></button>
+                  <button class="listsIcon"><i class="fas fa-stream"></i></button>
+                </div>
+                <div class="nextInfo">
+                  <span class="nextTitle">
+                    [4K][Killing Voice] 권진아(KwonJinAh)의 킬링보이스-끝, Lonely Night, Fly Away, 씨스루, 여기까지, Knock, 위로, 운이좋았지,
+                    뭔가잘못됐어
+                  </span>
+                  <span class="next_metadata">
+                    딩고 뮤직 / dingo music <br>
+                    737K views · 4 days ago
+                  </span>
+                </div>
+                <button class="nextMoreBtn"><i class="fas fa-ellipsis-v"></i></button>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://youtu.be/6RQ-bBdASvk">
+                <div class="thumbnail_icons">
+                  <img src="https://img.youtube.com/vi/6RQ-bBdASvk/mqdefault.jpg" alt="thumbnail" class="thumbnail">
+                  <button class="watchIcon"><i class="far fa-clock"></i></button>
+                  <button class="listsIcon"><i class="fas fa-stream"></i></button>
+                </div>
+                <div class="nextInfo">
+                  <span class="nextTitle">
+                    [4K][Killing Voice] 성시경(Sungsikyung)의 킬링보이스 - 너의 모든 순간, 좋을텐데, 넌 감동이었어, 희재, 두사람, 미소천사, 거리에서, 태양계ㅣ딩고뮤직
+                  </span>
+                  <span class="next_metadata">
+                    딩고 뮤직 / dingo music <br>
+                    13M views · 2 months ago
+                  </span>
+                </div>
+                <button class="nextMoreBtn"><i class="fas fa-ellipsis-v"></i></button>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://youtu.be/wDfqXR_5yyQ">
+                <div class="thumbnail_icons">
+                  <img src="https://img.youtube.com/vi/wDfqXR_5yyQ/mqdefault.jpg" alt="thumbnail" class="thumbnail">
+                  <button class="watchIcon"><i class="far fa-clock"></i></button>
+                  <button class="listsIcon"><i class="fas fa-stream"></i></button>
+                </div>
+                <div class="nextInfo">
+                  <span class="nextTitle">
+                    [4K][Special] 아이유(IU)의 킬링보이스를 라이브로! / 하루 끝, 너의 의미, 스물셋, 밤편지, 팔레트, 가을 아침, 삐삐, Blueming, 에잇, Coin, 라일락
+                  </span>
+                  <span class="next_metadata">
+                    딩고 뮤직 / dingo music <br>
+                    27M views · 4 months ago
+                  </span>
+                </div>
+                <button class="nextMoreBtn"><i class="fas fa-ellipsis-v"></i></button>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://youtu.be/3f3Wm-Ol_58">
+                <div class="thumbnail_icons">
+                  <img src="https://img.youtube.com/vi/3f3Wm-Ol_58/mqdefault.jpg" alt="thumbnail" class="thumbnail">
+                  <button class="watchIcon"><i class="far fa-clock"></i></button>
+                  <button class="listsIcon"><i class="fas fa-stream"></i></button>
+                </div>
+                <div class="nextInfo">
+                  <span class="nextTitle">
+                    ✨ 아침부터 저녁까지 듣기 좋은 디즈니 OST ✨
+                  </span> 
+                  <span class="next_metadata">
+                    딩고 뮤직 / dingo music <br>
+                    2.3M views · 5 months ago
+                  </span>
+                </div>
+                <button class="nextMoreBtn"><i class="fas fa-ellipsis-v"></i></button>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://youtu.be/5e7qMOZvgwg">
+                <div class="thumbnail_icons">
+                  <img src="https://img.youtube.com/vi/5e7qMOZvgwg/mqdefault.jpg" alt="thumbnail" class="thumbnail">
+                  <button class="watchIcon"><i class="far fa-clock"></i></button>
+                  <button class="listsIcon"><i class="fas fa-stream"></i></button>
+                </div>
+                <div class="nextInfo">
+                  <span class="nextTitle">
+                    [4K][special] 10CM의 킬링보이스를 라이브로! /폰서트, 매트리스, pet, 봄이좋냐??, TV를껐네, Perfect, 입김, 스토커, 사랑은은하수다방에서, 아메리카노
+                  </span> 
+                  <span class="next_metadata">
+                    딩고 뮤직 / dingo music <br>
+                    5.9M views · 5 months ago
+                  </span>
+                </div>
+                <button class="nextMoreBtn"><i class="fas fa-ellipsis-v"></i></button>
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      </section>
+    </aside>
+  </main>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      centeredSlides: false,
+      spaceBetween: 1,
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    });
+  </script>
+</body>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</html>
